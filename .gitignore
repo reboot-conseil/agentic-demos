@@ -1,2 +1,6 @@
 tmp.md
 sqlite-memory-langchain/demo.db
+gemini-rag-langchain/.env
+gemini-rag-langchain/vertexai-sa.json
+gemini-chat-docs-multimodal-langchain/vertexai-sa.json
+gemini-chat-langchain/vertexai-sa.json
