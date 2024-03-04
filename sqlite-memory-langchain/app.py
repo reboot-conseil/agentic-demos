@@ -1,4 +1,4 @@
-from langchain_community.chat_message_histories import MongoDBChatMessageHistory
+from langchain_community.chat_message_histories import SQLChatMessageHistory
 from langchain_community.chat_models import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables.history import RunnableWithMessageHistory
@@ -16,11 +16,9 @@ prompt = ChatPromptTemplate.from_messages(
 chain = prompt | llm
 chain_with_history = RunnableWithMessageHistory(
     chain, # type: ignore
-    lambda session_id: MongoDBChatMessageHistory(
+    lambda session_id: SQLChatMessageHistory(
+        connection_string="sqlite:///demo.db",
         session_id=session_id,
-        connection_string="mongodb://localhost:27017",
-        database_name="my_db",
-        collection_name="chat_histories",
     ),
     input_messages_key="question",
     history_messages_key="history",

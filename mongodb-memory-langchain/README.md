@@ -15,7 +15,7 @@ Document databases at the service of a long-term chat conversation history. This
 - `source venv/bin/activate`
 - `pip install -r requirements.txt`
 - talk to the bot with `python3 app.py "my interaction"`
-- stop the Redis instance with `docker compose down`
+- stop the MongoDB instance with `docker compose down`
 - deactivate the virtual environment with `deactivate`
 - you can come back a few days later (provided that you didn't kill your docker volumes), the bot will remember you!
 
