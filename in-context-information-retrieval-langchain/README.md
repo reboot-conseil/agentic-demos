@@ -1,6 +1,8 @@
-# Gemini Multimodal Langchain example
+# Gemini Chat in-context information retrieval
 
-A simple example showing how to instanciate a Gemini Pro instance with Langchain for multimodal inputs.
+An implementation of in-context information retrieval using the Gemini Chat Langchain API.
+
+We are using a lengthy PDF and we stuff the LLM context with selected parts of the splitted document to answer the user's query.
 
 ## Prerequisites
 
@@ -16,7 +18,5 @@ A simple example showing how to instanciate a Gemini Pro instance with Langchain
 - `python3 -m venv venv`
 - `source venv/bin/activate`
 - `pip install -r requirements.txt`
-- run the example script with `python3 app.py` (change the script if you want to change the input, you can also change the image)
+- run the example script with `python3 app.py` (change the script if you want to change the input)
 - deactivate the virtual environment with `deactivate`
-
-What's particulary impressive is that it seems to implement OCR out of the box!
