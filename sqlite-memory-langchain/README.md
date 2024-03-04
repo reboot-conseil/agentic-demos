@@ -1,4 +1,4 @@
-# MongoDB x Langchain memory
+# SQLite x Langchain memory
 
 Embedded systems databases at the service of a long-term chat conversation history. This also respects your privacy since we run Mistral locally using `ollama` 😎.
 
