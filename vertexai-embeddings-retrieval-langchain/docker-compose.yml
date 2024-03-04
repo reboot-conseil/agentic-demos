@@ -1,0 +1,24 @@
+volumes:
+  vertexai-embeddings-langchain-demo-vol:
+
+services:
+
+  app:
+    build: .
+    # we let the container up indefinitely
+    command: tail -f /dev/null
+    develop:
+        watch:
+          - action: sync
+            path: ./app.py
+            target: /app/app.py
+          - action: rebuild
+            path: requirements.txt
+
+  redis:
+    image: redis/redis-stack-server
+    restart: always
+    ports:
+      - 6379:6379
+    volumes:
+      - vertexai-embeddings-langchain-demo-vol:/data

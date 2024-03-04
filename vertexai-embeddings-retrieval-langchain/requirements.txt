@@ -1,0 +1,9 @@
+langchain
+langchain-community
+langchain-google-vertexai
+pypdf
+python-dotenv
+redis
+redisvl
+urllib3==1.26.18
+tiktoken
