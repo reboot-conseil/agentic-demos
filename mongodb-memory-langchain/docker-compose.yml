@@ -1,0 +1,11 @@
+volumes:
+  mongo-mem-langchain-demo-vol:
+
+services:
+
+  mongo:
+    image: mongo:7.0.6
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-mem-langchain-demo-vol:/data/db
