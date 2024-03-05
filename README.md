@@ -1,4 +1,4 @@
-# agentic katas
+# agentic demos
 
 Useful demos of various use-cases when working with agentic applications.
 
