@@ -1,0 +1,8 @@
+arxiv
+duckduckgo-search
+httpx==0.26.0
+langchain
+langchain-community
+langchain-openai
+langgraph
+urllib3==1.26.18
